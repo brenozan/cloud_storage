@@ -139,7 +139,7 @@ class CloudStorage
     {
       "x-goog-api-version": 2
       "x-goog-project-id": @project_id
-      "Authorization": "OAuth #{@oauth\get_access_token!}"
+      "Authorization": "#{@oauth.auth_type} #{@oauth\get_access_token!}"
       "Date": date!\fmt "${http}"
     }
 

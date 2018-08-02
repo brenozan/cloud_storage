@@ -80,8 +80,7 @@ encode = function(params)
       }
       local content
       if type(v) == File then
-        local _update_0 = 1
-        buffer[_update_0] = buffer[_update_0] .. ('; filename="' .. v.fname .. '"')
+        buffer[1] = buffer[1] .. ('; filename="' .. v.fname .. '"')
         insert(buffer, "Content-type: " .. tostring(v:mime()))
         content = v:content()
       else

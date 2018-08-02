@@ -237,7 +237,7 @@ do
       return {
         ["x-goog-api-version"] = 2,
         ["x-goog-project-id"] = self.project_id,
-        ["Authorization"] = "OAuth " .. tostring(self.oauth:get_access_token()),
+        ["Authorization"] = tostring(self.oauth.auth_type) .. " " .. tostring(self.oauth:get_access_token()),
         ["Date"] = date():fmt("${http}")
       }
     end,

@@ -25,6 +25,7 @@ do
     auth_url = "https://accounts.google.com/o/oauth2/token",
     header = '{"alg":"RS256","typ":"JWT"}',
     digest_type = "sha256WithRSAEncryption",
+    auth_type = "OAuth",
     scope = {
       read_only = "https://www.googleapis.com/auth/devstorage.read_only",
       read_write = "https://www.googleapis.com/auth/devstorage.read_write",
