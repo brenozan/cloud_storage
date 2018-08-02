@@ -29,5 +29,6 @@ build = {
     ["cloud_storage.oauth"] = "cloud_storage/oauth.lua",
     ["cloud_storage.http"] = "cloud_storage/http.lua",
     ["cloud_storage.instanceauth"] = "cloud_storage/instanceauth.lua",
+    ["cloud_storage.customtokensource"] = "cloud_storage/customtokensource.lua",
   }
 }
