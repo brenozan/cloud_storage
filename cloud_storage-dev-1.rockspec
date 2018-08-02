@@ -2,7 +2,7 @@ package = "cloud_storage"
 version = "dev-1"
 
 source = {
-  url = "git://github.com/leafo/cloud_storage.git",
+  url = "git://github.com/brenozan/cloud_storage.git",
 }
 
 description = {
@@ -28,5 +28,6 @@ build = {
     ["cloud_storage.google"] = "cloud_storage/google.lua",
     ["cloud_storage.oauth"] = "cloud_storage/oauth.lua",
     ["cloud_storage.http"] = "cloud_storage/http.lua",
+    ["cloud_storage.instanceauth"] = "cloud_storage/instanceauth.lua",
   }
 }
